@@ -1,2 +1,1 @@
-yoyo
 # amruttulya-restaurant
