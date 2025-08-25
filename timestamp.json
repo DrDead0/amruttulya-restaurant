@@ -1,9 +1,18 @@
-{
-
-    "Name":"Ashish Chaurasiya",
-    "Date":"25-08-25",
-    "timestamp":"13:14",
-    "part":1,
-    "merge status":"merged",
-    "pull Request":"9737889"
-}
+[
+    {
+        "Name":"Ashish Chaurasiya",
+        "Date":"25-08-25",
+        "timestamp":"13:14",
+        "part":1,
+        "merge status":"merged",
+        "pull Request":"9737889"
+    },
+    {
+        "Name":"Ashish Chaurasiya",
+        "Date":"25-08-25",
+        "timestamp":"13:14",
+        "part":2,
+        "merge status":"merged",
+        "pull Request":"9737889"
+    }
+]
