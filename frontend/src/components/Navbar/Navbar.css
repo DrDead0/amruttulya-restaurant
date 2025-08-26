@@ -4,51 +4,107 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar.logo{
-    width: 150px;
 
+.logo {
+    width: 120px;
+    height: auto;
 }
-.navbar-menu{
+
+.navbar-menu {
     display: flex;
     list-style: none;
-    gap:20px;
-    color: #49557e;
+    gap: 50px;
+    color: #626262;
     font-size: 18px;
+    font-weight: 500;
 }
-.navbar-right{
+
+.navbar-menu li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li:hover {
+    color: #ff6b6b;
+}
+
+.navbar-menu li.active {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+.navbar-right {
     display: flex;
     align-items: center;
-    gap: 40px
+    gap: 20px;
 }
-.navbar button{
-    background: transparent;
+
+.navbar-right img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbar-right img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-search-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.dot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.navbar-right button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
     font-size: 16px;
-    color:#49557e;
-    border: 1px solid tomato;
-    padding: 10px 30px;
-    border-radius: 50px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.navbar button:hover{
-    background-color: #fff4f2
+
+.navbar-right button:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
 }
-.navbar .active{
-    padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
-}
-.navbar li{
-    cursor: pointer;
-}
-.navbar-search-icon{
-    position: relative;
-}
-.navbar-search-icon .dot{
-    position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background-color: tomato;
-    border-radius: 8px;
-    top: -8px;
-    right: -8px;
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navbar-menu {
+        gap: 30px;
+        font-size: 16px;
+    }
+    
+    .navbar-right {
+        gap: 15px;
+    }
+    
+    .logo {
+        width: 100px;
+    }
 }
